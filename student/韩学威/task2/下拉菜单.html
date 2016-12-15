@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>下拉菜单</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#menu{
+			display: block;
+			margin: 0 auto;
+			overflow: hidden;
+			width: 200px;
+			height: 40px;
+			text-align: center;
+			line-height: 40px;
+			cursor: pointer;
+			background: pink;
+		}
+		#menu:hover{
+			height: 160px;
+		}
+		#list{
+			background: lightyellow;
+		}
+		#list li{
+			list-style: none;
+			display: block;
+			cursor: pointer;
+		}
+		#list li:hover{
+			background: lightblue;
+		}
+		#arrow{
+			display: inline-block;
+			width: 0;
+			height: 0;
+			border-width: 10px;
+		    border-style: solid;
+		    border-color: #333 transparent red;
+		}
+	</style>	
+</head>
+<body>
+		<span id="menu">下拉菜单
+			<ul id="list">
+				<li>嘿嘿嘿</li>
+				<li>哈哈哈</li>
+				<li>呵呵呵</li>
+			</ul>
+		</span>
+</body>
+</html>
