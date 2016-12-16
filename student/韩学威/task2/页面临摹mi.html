@@ -3,154 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>小米</title>
-	<style>
-		*{
-			margin: 0;
-			padding: 0;
-		}
-		body{
-			font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
-		}
-		a{
-			text-decoration: none;
-		}
-		li{
-			list-style: none;
-		}
-		.site-topbar{
-			height: 40px;
-			background: #333;
-		}
-		.site-topbar .container{
-			width: 1226px;
-			line-height: 40px;
-			margin: 0 auto;
-			color: #b0b0b0;
-		}
-		.site-topbar .container li{
-			float: left;
-			margin-right: 10px;
-			font-size: 12px;
-		}
-		.site-topbar .container li:nth-of-type(odd):hover{
-			cursor: pointer;
-			color: #fff;
-		}
-		.site-header{
-			width: 1226px;
-			height: 100px;
-			line-height: 100px;
-			margin: 0 auto;
-		}
-		.site-header li{
-			float: left;
-		}
-		.site-header nav a{
-			font-size: 16px;
-			color: #333;
-			margin-left: 15px;
-			cursor: pointer;
-		}
-		.site-header nav a:hover{
-			color: #ff6700;
-		}
-		.site-header nav{
-			margin-left: 230px;
-		}
-		.logo{
-			float: left;
-			width: 55px;
-			height: 55px;
-			margin-top: 20px;
-			background: #ff6700;
-		}
-		.search{
-			float: right;
-			display: block;
-			width: 300px;
-			height: 55px;
-			border: #eee solid 1px;
-			margin-top: 24px;
-			position: relative;
-		}
-		.search input{
-			width: 245px;
-			height: 54px;
-			text-indent: 10px;
-			outline: none;
-			border: none;
-			position: absolute;
-		}
-		.search input:focus{
-			border: #ff6700 solid 1px;
-		}
-		.search a{
-			display: block;
-			width: 55px;   
-			height: 55px;
-			position: absolute;
-			top: -1px;
-			right: -1px;
-			border: 1px #eee solid;
-			line-height: 55px;
-			text-align: center;
-			color: #aaa;
-			cursor: pointer;
-		}
-		.search a:hover{
-			background: #ff6700;
-			border: 1px solid #ff6700;
-		}
-		.home-hero{
-			position: relative;
-			display: block;
-			width: 1226px;
-			height: 460px;
-			margin: 0 auto;
-			background: url('http://i3.mifile.cn/a4/63fd6d20-e92c-4591-92f8-0d212b127063');
-		}
-		.home-hero nav{
-			float: left;
-			width: 234px;
-			height: 420px;
-			background: rgba(0,0,0,0.6);
-			color: #fff;
-			padding: 20px 0;
-		} 
-		.home-hero a{
-			display: inline-block;
-			width: 100%;
-			height: 42px;
-			font-size: 14px;
-			line-height: 42px;
-			text-indent: 20px;
-			cursor: pointer;
-		}
-		.home-hero a:hover{
-			background: #ff6700;
-		}
-		.icon-nav{
-			position: absolute;
-			right: 50px;
-			bottom: 20px;
-		}
-		.icon-nav li{
-			float: left;
-			width: 6px;
-			height: 6px;
-			border: 2px #666 solid;
-			border-radius: 100%;
-			background: rgba( 100, 100, 100, 0.6);
-			margin: 10px;
-			cursor: pointer;
-		}
-		.icon-nav li:hover{
-			background: #aaa;
-		}
-		li.icon-selected{
-			background: #aaa;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<div class="site-topbar">
@@ -193,8 +46,8 @@
 			<a>社区</a>
 		</nav>
 	</header>
-	<mian class="home-hero">
-		<nav>
+	<div class="home-hero">
+		<nav class="home-nav">
 			<a>手机 电话卡</a>
 			<a>笔记本 平板</a>
 			<a>电视 盒子</a>
@@ -213,9 +66,96 @@
 			<li></li>
 			<li></li>
 		</ul>
-	</main>
-	<section>
-		
-	</section>
+	</div>
+	<div class="home-hero-sub">
+		<nav class="item-nav">
+			<a href=""><i class="icon">A</i>选购手机</a>
+			<a href=""><i class="icon">B</i>企业团购</a>
+			<a href=""><i class="icon">C</i>官翻产品</a>
+			<a href=""><i class="icon">D</i>小米移动</a>
+			<a href=""><i class="icon">E</i>以旧换新</a>
+			<a href=""><i class="icon">F</i>话费充值</a>
+		</nav>
+		<img src="http://i3.mifile.cn/a4/1904a199-21ed-454f-a02d-801a538fb71d" alt="" class="item">
+		<img src="http://i3.mifile.cn/a4/f146b0e5-f162-4308-88a5-f605aeb790c2" alt="" class="item">
+		<img src="http://i3.mifile.cn/a4/ff2415d3-217b-4742-94cb-d115b2903902" alt="" class="item">
+	</div>
+	<div class="home-star-goods">
+		<h2>2017年，你想要什么新年礼物？</h2>
+		<ul>
+			<li>
+				<img src="http://i3.mifile.cn/a4/4c68c352-fbd3-452d-be90-7b47e4f6ce76" alt="">
+				<a href="">小米平板2 16GB现货</a>
+				<p class="desc">轻薄全金属，海量内容</p>
+				<p class="price">999元</p>
+			</li>
+			<li>
+				<img src="http://i3.mifile.cn/a4/6ef55907-bbed-49be-a2bb-be0821b5f7b8" alt="">
+				<a href="">小米手环 2&nbsp;</a>
+				<p class="desc">OLED 显示屏幕，升级计步算法</p>
+				<p class="price">149元</p>
+			</li>
+			<li>
+				<img src="http://i3.mifile.cn/a4/T146YgBKhv1RXrhCrK.jpg" alt="">
+				<a href="">小米盒子3 增强版</a>
+				<p class="desc">高端 4K 网络机顶盒</p>
+				<p class="price">399元</p>
+			</li>
+			<li>
+				<img src="http://i3.mifile.cn/a4/17fc57e5-e332-4452-bba4-ef341f6e59fd" alt="">
+				<a href="">小米移动电源2</a>
+				<p class="desc">双向快充，高密度锂聚合物电芯</p>
+				<p class="price">79元</p>
+			</li>
+			<li>
+				<img src="http://i3.mifile.cn/a4/T1d__jBQYT1RXrhCrK.jpg" alt="">
+				<a href="">小米空气净化器2</a>
+				<p class="desc">10分钟，房间空气焕然一新</p>
+				<p class="price">699元</p>
+			</li>
+		</ul>
+	</div>
+	<div class="home-main">
+		<div class="home-brick-box">
+			<h2>挑个好礼物，给新年的自己</h2>
+			<img src="http://i3.mifile.cn/a4/35685d7a-6bed-4194-8f86-28b3ec40ef35" alt="">
+			<ul class="gift-list">
+				<li>
+					<img src="http://i1.mifile.cn/a1/T1OVC_ByY_1RXrhCrK!220x220.jpg" alt="">
+					<a href="">超级电饭锅</a>
+					<p class="desc">你对电饭锅一无所知</p>
+					<p class="price">123元</p>
+				</li>
+				<li><img src="http://i1.mifile.cn/a1/T1vJE_Bv_T1RXrhCrK!220x220.jpg" alt="">
+					<a href="">超级电饭锅</a>
+					<p class="desc">你对电饭锅一无所知</p>
+					<p class="price">123元</p></li>
+				<li><img src="http://i1.mifile.cn/a1/T17FCQByWv1RXrhCrK!220x220.jpg" alt="">
+					<a href="">超级电饭锅</a>
+					<p class="desc">你对电饭锅一无所知</p>
+					<p class="price">123元</p></li>
+				<li><img src="http://i1.mifile.cn/a1/pms_1481698782.74068258!220x220.jpg" alt="">
+					<a href="">超级电饭锅</a>
+					<p class="desc">你对电饭锅一无所知</p>
+					<p class="price">123元</p></li>
+				<li><img src="http://i3.mifile.cn/a4/cbabf443-1ff1-4014-a1bf-06c45476f1e6" alt="">
+					<a href="">超级电饭锅</a>
+					<p class="desc">你对电饭锅一无所知</p>
+					<p class="price">123元</p></li>
+				<li><img src="http://i1.mifile.cn/a1/pms_1464071511.37197399!220x220.jpg" alt="">
+					<a href="">超级电饭锅</a>
+					<p class="desc">你对电饭锅一无所知</p>
+					<p class="price">123元</p></li>
+				<li><img src="http://i1.mifile.cn/a1/T1PXhgBbdT1RXrhCrK!220x220.jpg" alt="">
+					<a href="">超级电饭锅</a>
+					<p class="desc">你对电饭锅一无所知</p>
+					<p class="price">123元</p></li>
+				<li><img src="http://i1.mifile.cn/a1/pms_1472609961.95298675!220x220.jpg" alt="">
+					<a href="">超级电饭锅</a>
+					<p class="desc">你对电饭锅一无所知</p>
+					<p class="price">123元</p></li>
+			</ul>
+		</div>
+	</div>
 </body>
 </html>
