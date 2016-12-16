@@ -1,0 +1,259 @@
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			font: 14px/1.5 "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+		}
+		a{
+			text-decoration: none;
+		}
+		li{
+			list-style: none;
+		}
+		.site-topbar{
+			height: 40px;
+			background: #333;
+		}
+		.site-topbar .container{
+			width: 1226px;
+			line-height: 40px;
+			margin: 0 auto;
+			color: #b0b0b0;
+		}
+		.site-topbar .container li{
+			float: left;
+			margin-right: 10px;
+			font-size: 12px;
+		}
+		.site-topbar .container li:nth-of-type(odd):hover{
+			cursor: pointer;
+			color: #fff;
+		}
+		.site-header{
+			width: 1226px;
+			height: 100px;
+			margin: 0 auto;
+		}
+		.site-header li{
+			float: left;
+		}
+		.site-header nav a{
+			font-size: 16px;
+			color: #333;
+			margin-left: 15px;
+			cursor: pointer;
+		}
+		.site-header nav a:hover{
+			color: #ff6700;
+		}
+		.site-header nav{
+			margin-left: 230px;
+			padding-top: 40px;
+		}
+		.logo{
+			float: left;
+			width: 55px;
+			height: 55px;
+			margin-top: 20px;
+			background: #ff6700;
+		}
+		.search{
+			float: right;
+			margin-top: 24px;
+			border: #eee solid 1px;
+			width: 300px;
+			height: 55px;
+			position: relative;
+		}
+		.search input{
+			width: 300px;
+			height: 54px;
+			text-indent: 10px;
+			outline: none;
+			border: none;
+		}
+		.search input:focus{
+			border: #ff6700 solid 1px;
+		}
+		.search a{
+			position: absolute;
+			right: -1px;
+			top: 0;
+			width: 55px;   
+			height: 55px;
+			border-left: 1px #eee solid;
+			line-height: 55px;
+			text-align: center;
+			color: #aaa;
+			cursor: pointer;
+		}
+		.search a:hover{
+			background: #ff6700;
+		}
+		.home-hero{
+			position: relative;
+			display: block;
+			width: 1226px;
+			height: 460px;
+			margin: 0 auto;
+			background: url('http://i3.mifile.cn/a4/63fd6d20-e92c-4591-92f8-0d212b127063');
+		}
+		.home-hero .home-nav{
+			float: left;
+			width: 234px;
+			height: 420px;
+			background: rgba(0,0,0,0.6);
+			color: #fff;
+			padding: 20px 0;
+		} 
+		.home-hero .home-nav a{
+			display: inline-block;
+			width: 100%;
+			height: 42px;
+			font-size: 14px;
+			line-height: 42px;
+			text-indent: 20px;
+			cursor: pointer;
+		}
+		.home-hero .home-nav a:hover{
+			background: #ff6700;
+		}
+		.icon-nav{
+			position: absolute;
+			right: 50px;
+			bottom: 20px;
+		}
+		.icon-nav li{
+			float: left;
+			width: 6px;
+			height: 6px;
+			border: 2px #666 solid;
+			border-radius: 100%;
+			background: rgba( 100, 100, 100, 0.6);
+			margin: 10px;
+			cursor: pointer;
+		}
+		.icon-nav li:hover{
+			background: #aaa;
+		}
+		li.icon-selected{
+			background: #aaa;
+		}
+		.home-hero-sub{
+			clear: left;
+			padding-top: 20px;
+			width: 1226px;
+			height: 170px;
+			margin: 0 auto;
+		}
+		.home-hero-sub .item{
+			float: right;
+			margin-left: 13px;
+			width: 316px;
+			height: 170px;
+		}
+		.item-nav{
+			display: inline-block;
+			width: 234px;
+			height: 170px;
+			background: #333;
+		}
+		.item-nav a{
+			float: left;
+			margin: 10px 4px;
+			width: 70px;
+			height: 64px;
+			color: #ddd;
+			text-align: center;
+		}
+		.item-nav a:hover{
+			color: #fff;
+		}
+		.item-nav .icon{
+			display: block;
+			margin: 8px auto;
+			width: 30px;
+			height: 30px;
+			line-height: 30px;
+		}
+		.home-star-goods{
+			width: 1226px;
+			height: 438px;
+			margin: 20px auto 0;
+		}
+		.home-star-goods h2{
+			font-size: 22px;
+			font-weight: 200;
+			line-height: 60px;
+			color: #333;
+		}
+		.home-star-goods li{
+			float: left;
+			width: 234px;
+			height: 340px;
+			margin: 0 5px;
+			text-align: center;
+			border-top: 2px orange solid;
+			background: #fafafa;
+		}
+		.home-star-goods li a{
+			display: inline-block;
+			color: #333;
+		}
+		.home-star-goods img{
+			width: 160px;
+			height: 160px;
+			margin: 40px 0;
+		}
+		.desc{
+			font-size: 14px;
+			color: #aaa;
+			margin-top: 10px;
+		}
+		.price{
+			color: orange;
+		}
+
+		.home-main{
+			clear: both;
+			width: 100%;
+			height: 4614px;
+			background: #f5f5f5;
+			padding-top: 50px;
+		}
+		.home-main h2{
+			line-height: 60px;
+			font-size: 22px;
+			font-weight: 200;
+			color: #333;
+		}
+		.home-brick-box{
+			width: 1226px;
+			margin: 0 auto;
+		}
+		.home-brick-box img{
+			width: 234px;
+			height: 614px;
+			float: left;
+		}
+		.home-brick-box li{
+			width: 234px;
+			height: 300px;
+			text-align: center;
+		}
+		.gift-list{
+			float: right;
+			width: 978px;
+			height: 628px;
+		}
+		.gift-list li{
+			float: left;
+			background: #fff;
+			margin: 0 5px 10px;
+		}
+		.gift-list img{
+			width: 160px;
+			height: 160px;
+			margin: 20px 35px;
+		}
