@@ -350,7 +350,7 @@ nav a:hover{
 	height: 890px;
 }
 .soft-list{
-	display: inline-block;
+	height: 568px;
 	border: 1px solid #e5e5e5;
 }
 .soft-list li{
@@ -459,6 +459,7 @@ nav a:hover{
 	background: #eee;
 }
 .cate-list{
+	clear: both;
 	border: #e5e5e5 1px solid;
 	border-top: transparent;
 	padding: 25px 0;
