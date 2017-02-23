@@ -1,0 +1,185 @@
+*{
+	margin: 0;
+	padding: 0;
+    font-family: '微软雅黑';
+}
+a{
+	text-decoration: none;
+    color: #000;
+}
+li{
+    list-style: none;
+}
+body{
+	background: #ededef;
+}
+/**********************header**************************/
+header{
+	width: 100%;
+	height: 100px;
+    position: relative;
+    margin-bottom: 20px;
+    background: url("../img/bg1.png");
+    margin-bottom: 45px;
+}
+#head{
+    width: 980px;
+    height: 100px;
+    margin: 0 auto;
+}
+#head h1{
+    color: #eee;
+    line-height: 70px;
+    text-indent: 30px;
+}
+#head .nav{
+    margin-left: 10px;
+    text-indent: 20px;
+}
+#head ul li{
+    float: left;
+}
+#head ul li a{
+    color: #eee;
+}
+#head .login{
+    float: right;
+    margin-right: 30px;
+}
+#head .login a{
+    color: #eee;
+    margin-left: 10px;
+}
+#back{
+    display: none;
+}
+/**#*******************content**************************/
+#content{
+    margin: 0 auto;
+    width: 980px;
+    position: relative;
+    background: url("../img/bg2.png");
+}
+#story{
+    padding: 60px 110px;
+    margin: 0 auto;
+    min-height: 598px;
+    width: 760px;
+    background: url("../img/bg2.png");
+}
+#article p{
+    line-height: 38px;
+    font-size:18px;
+}
+#user{
+    padding: 60px 80px;
+    margin: 0 auto;
+    min-height: 598px;
+    width: 820px;
+    background: url("../img/bg2.png");
+}
+#content .item{
+	background: #fff;
+	padding: 30px 40px;
+    margin-bottom: 35px;
+    background: url("../img/bg2.png");
+}
+#content .summary{
+    margin: 15px 0 15px 0;
+    width: 920px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+#content .item h3{
+    color: #333;
+}
+#content .item span{
+    display: block;
+    margin-top: 10px;
+}
+#content .item span a{
+    float: left;
+}
+/**********************footer***************************/
+footer{
+	width: 100%;
+	height: 100px;
+    margin-top: 50px;
+	background: url("../img/bg1.png");
+}
+
+
+@media screen and (max-width: 768px){
+    #head{
+        width: 100%;
+        height: 50px;
+    }
+    #head h1{
+        line-height: 40px;
+        text-indent: 10px;
+        font-size: 20px;
+    }
+    #head .nav{
+        display: none;
+    }
+    #head .login{
+        display: none;
+    }
+    #back{
+        display: block;
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        font-size: 20px;
+        font-weight: 400;
+        color:#ddd;
+    }
+    #content{
+        width: 100%;
+    }
+    #content .item{
+        padding: 10px 15px;
+        margin-bottom: 3px;
+        background: url('img/bg2.png');
+    }
+    #content .item h3{
+        color: #333;
+        font-size: 18px;
+    }
+    #content .summary{
+        width: 100%;
+        margin: 10px 0 10px 0;
+    }
+    header{
+        height: 40px;
+        margin-bottom: 0;
+    }
+    footer{
+        height: 40px;
+        margin-top: 0;
+    }
+    #story{
+        width: 90%;
+        padding:5%;
+    }
+    #commits{
+        color: #333;
+    }
+    #commContent{
+        width: 99%;
+        height: 80px;
+        font-size: 18px;
+    }
+    #commAuthor{
+        width: 99%;
+        height: 30px;
+        font-size: 18px;
+    }
+    #submit{
+        width: 99%;
+        height: 40px;
+        font-size: 18px;
+    }
+}
