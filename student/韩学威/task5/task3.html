@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<p id="p1"></p>
+	<script>
+		var Feb = new Array();
+		for(var i = 1; i<29; i++){
+			Feb.push(new Date(2017,1,i));
+		}
+	function getDate(month,day){
+		var theDays = new Array();
+		for(var i = 0; i<Feb.length; i++){
+			if(Feb[i].getDay()== day){
+				theDays.push(
+					JSON.stringify(
+						{
+							'date': Feb[i].toLocaleDateString(),
+							'daysBefore': Feb[i].getDate() - new Date().getDate()
+						}
+					)
+				)
+			}
+		}
+		return theDays;
+	}
+			console.log(getDate(Feb,3))
+	</script>
+</body>
+</html>

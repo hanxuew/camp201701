@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Task1</title>
+</head>
+<body>
+	<form action="#">
+		<input type="text" id="password">
+		<button id="submit">提交</button>
+		<p id="p1"></p>
+	</form>
+	<script>
+		var oInput = document.getElementById('password');
+		var oSubmit = document.getElementById('submit');
+		var f = document.getElementById('p1');
+		function passHandle (str){
+			str = str.replace(/-/g,"").toUpperCase();
+			if(str.length == 20){
+				return str;
+			}else{
+				return "无效密码";
+			}
+		}
+		oSubmit.onclick = function(){
+			console.log(passHandle(oInput.value));
+			f.innerHTML = passHandle(oInput.value);
+		};
+	</script>
+</body>
+</html>
